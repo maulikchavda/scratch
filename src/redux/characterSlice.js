@@ -62,7 +62,6 @@ export const characterSlice = createSlice({
       return state;
     },
     deleteCharacter: (state, action) => {
-      console.log("ACTION", action.payload);
       let tempCharacters = [...state.characters];
       tempCharacters = tempCharacters.filter(
         (char) => char.id !== action.payload.id,
